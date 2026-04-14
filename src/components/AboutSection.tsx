@@ -29,7 +29,7 @@ export default function AboutSection() {
               <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="https://i.ibb.co/vvQwvkNx/2-doctor-vascular.jpg"
-                  alt="Dr. Patricio Gavilanes"
+                  alt="Dr. Patricio Gavilanes — Especialista en Angiología y Cirugía Vascular, Hospital de los Valles Cumbayá"
                   fill
                   className="object-cover object-top"
                 />

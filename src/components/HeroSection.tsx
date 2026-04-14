@@ -72,7 +72,7 @@ export default function HeroSection() {
             <div className="relative w-full h-full rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
               <Image
                 src="https://i.ibb.co/vvQwvkNx/2-doctor-vascular.jpg"
-                alt="Dr. Patricio Gavilanes - Especialista Vascular"
+                alt="Dr. Patricio Gavilanes — Cirujano Especialista en Angiología y Cirugía Vascular, Cumbayá"
                 fill
                 className="object-cover object-top"
                 priority
