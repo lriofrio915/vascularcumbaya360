@@ -15,12 +15,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <div className="relative h-12 w-12 rounded-full overflow-hidden bg-white shadow mb-3">
+            <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-white/20 shadow mb-3">
               <Image
-                src="https://i.ibb.co/XkZfqNgg/IMG-20260407-WA0045.jpg"
-                alt="Logo Dr. Patricio Gavilanes"
+                src="https://i.ibb.co/Lh2xqhns/IMG-20260413-WA0059.jpg"
+                alt="Dr. Patricio Gavilanes — Cirujano Vascular Cumbayá"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <div className="font-bold text-lg mb-1">Dr. Patricio Gavilanes</div>
