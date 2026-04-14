@@ -1,11 +1,20 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    console.error("RESEND_API_KEY no está configurado");
+    return NextResponse.json(
+      { error: "Servicio de email no configurado" },
+      { status: 503 }
+    );
+  }
+
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
     const { name, email, phone, message } = await req.json();
 
     if (!name || !email || !phone || !message) {
@@ -15,9 +24,19 @@ export async function POST(req: Request) {
       );
     }
 
-    const { error } = await resend.emails.send({
-      from: "Formulario Web <onboarding@resend.dev>",
-      to: "info@drpatriciogavilanes.com",
+    const resend = new Resend(apiKey);
+
+    // RESEND_FROM_EMAIL debe ser un email de un dominio verificado en Resend.
+    // Mientras no se verifique un dominio, usar "onboarding@resend.dev" solo
+    // permite enviar al email con el que se registró la cuenta en Resend.
+    const fromEmail =
+      process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
+    const toEmail =
+      process.env.RESEND_TO_EMAIL ?? "info@drpatriciogavilanes.com";
+
+    const { data, error } = await resend.emails.send({
+      from: `Formulario Web Dr. Gavilanes <${fromEmail}>`,
+      to: toEmail,
       replyTo: email,
       subject: `Nueva consulta desde landing Cumbayá — ${name}`,
       html: `
@@ -54,10 +73,11 @@ export async function POST(req: Request) {
     });
 
     if (error) {
-      console.error("Resend error:", error);
+      console.error("Resend error:", JSON.stringify(error));
       return NextResponse.json({ error: "Error al enviar" }, { status: 500 });
     }
 
+    console.log("Email enviado correctamente, id:", data?.id);
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Contact route error:", err);
