@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Dr. Patricio Gavilanes Cumbayá",
     images: [
       {
-        url: "https://i.ibb.co/9jbHTR5/1-doctor-gavilanes-medico-vascular.png",
+        url: "https://i.ibb.co/vvQwvkNx/2-doctor-vascular.jpg",
         width: 1200,
         height: 630,
         alt: "Dr. Patricio Gavilanes",

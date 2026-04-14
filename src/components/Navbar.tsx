@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
 
 const WHATSAPP_URL =
   "https://wa.me/593998340502?text=Hola%20Dr.%20Gavilanes%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.";
@@ -33,21 +34,31 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#inicio" className="flex flex-col leading-tight">
-          <span
-            className={`font-bold text-base tracking-wide transition-colors ${
-              scrolled ? "text-[#1B3A6B]" : "text-white"
-            }`}
-          >
-            Dr. Patricio Gavilanes
-          </span>
-          <span
-            className={`text-xs transition-colors ${
-              scrolled ? "text-[#2563EB]" : "text-blue-200"
-            }`}
-          >
-            Angiología y Cirugía Vascular
-          </span>
+        <a href="#inicio" className="flex items-center gap-3">
+          <div className="relative h-10 w-10 rounded-full overflow-hidden bg-white shadow-sm flex-shrink-0">
+            <Image
+              src="https://i.ibb.co/XkZfqNgg/IMG-20260407-WA0045.jpg"
+              alt="Logo Dr. Patricio Gavilanes"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="flex flex-col leading-tight">
+            <span
+              className={`font-bold text-base tracking-wide transition-colors ${
+                scrolled ? "text-[#1B3A6B]" : "text-white"
+              }`}
+            >
+              Dr. Patricio Gavilanes
+            </span>
+            <span
+              className={`text-xs transition-colors ${
+                scrolled ? "text-[#2563EB]" : "text-blue-200"
+              }`}
+            >
+              Angiología y Cirugía Vascular
+            </span>
+          </div>
         </a>
 
         {/* Desktop nav */}
