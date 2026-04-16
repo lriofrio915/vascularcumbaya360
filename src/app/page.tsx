@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
+import GallerySection from "@/components/GallerySection";
 import LocationSection from "@/components/LocationSection";
 import ContactSection from "@/components/ContactSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -17,6 +18,7 @@ export default function Home() {
         <StatsSection />
         <ServicesSection />
         <AboutSection />
+        <GallerySection />
         <LocationSection />
         <ContactSection />
       </main>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const BASE_URL = "https://vascularcumbaya360.vercel.app";
-const DOCTOR_PHOTO = "https://i.ibb.co/vvQwvkNx/2-doctor-vascular.jpg";
+const DOCTOR_PHOTO = "https://i.ibb.co/hr2fDY2/IMG-20260414-WA0012.jpg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
