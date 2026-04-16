@@ -19,7 +19,7 @@ export default function WhatsAppButton() {
           </span>
           <button
             onClick={() => setTooltipVisible(false)}
-            className="text-gray-400 hover:text-gray-600 shrink-0"
+            className="text-gray-400 hover:text-gray-600 shrink-0 p-2 -m-2"
             aria-label="Cerrar"
           >
             <X size={14} />
