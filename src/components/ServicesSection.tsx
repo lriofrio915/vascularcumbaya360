@@ -66,7 +66,7 @@ export default function ServicesSection() {
                     className="text-[#2563EB] group-hover:text-white transition-colors duration-300"
                   />
                 </div>
-                <h3 className="font-bold text-[#1B3A6B] text-base mb-2">
+                <h3 className="font-bold text-[#1B3A6B] text-lg mb-2">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
