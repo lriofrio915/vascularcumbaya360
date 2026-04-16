@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { Menu, X, Phone, Sun, Moon } from "lucide-react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -32,6 +33,7 @@ export default function Navbar() {
   const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
+    <>
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
@@ -119,14 +121,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <>
-          {/* Overlay para cerrar al tocar fuera */}
-          <div
-            className="fixed inset-0 z-40"
-            onClick={() => setMenuOpen(false)}
-            aria-hidden="true"
-          />
-          <div className="relative z-50 md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 px-4 py-4 flex flex-col gap-3 shadow-lg">
+        <div className="relative z-50 md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 px-4 py-4 flex flex-col gap-3 shadow-lg">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -156,8 +151,17 @@ export default function Navbar() {
             Agendar Cita
           </a>
         </div>
-        </>
       )}
     </header>
+    {/* Overlay portal — fuera del header para evitar conflictos de z-index */}
+    {menuOpen && mounted && createPortal(
+      <div
+        className="fixed inset-0 z-40"
+        onClick={() => setMenuOpen(false)}
+        aria-hidden="true"
+      />,
+      document.body
+    )}
+    </>
   );
 }
