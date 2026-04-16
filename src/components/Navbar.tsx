@@ -67,7 +67,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-[#2563EB] ${
+              className={`text-sm font-medium py-3 transition-colors hover:text-[#2563EB] ${
                 scrolled ? "text-[#1F2937]" : "text-white"
               }`}
             >
@@ -78,7 +78,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors"
+            className="flex items-center gap-2 bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-sm font-semibold px-4 py-3 rounded-full transition-colors"
           >
             <Phone size={14} />
             Agendar Cita
@@ -87,7 +87,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className={`md:hidden transition-colors ${
+          className={`md:hidden p-2 transition-colors ${
             scrolled ? "text-[#1B3A6B]" : "text-white"
           }`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -105,7 +105,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-[#1F2937] font-medium py-1 hover:text-[#2563EB] transition-colors"
+              className="text-[#1F2937] font-medium py-3 hover:text-[#2563EB] transition-colors"
             >
               {link.label}
             </a>
