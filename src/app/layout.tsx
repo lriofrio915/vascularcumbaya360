@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const BASE_URL = "https://vascularcumbaya360.vercel.app";
+const BASE_URL = "https://vascularcumbaya360.com";
 const DOCTOR_PHOTO = "https://i.ibb.co/hr2fDY2/IMG-20260414-WA0012.jpg";
 
 export const metadata: Metadata = {
