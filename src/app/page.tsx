@@ -4,6 +4,7 @@ import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import LocationSection from "@/components/LocationSection";
 import ContactSection from "@/components/ContactSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -19,6 +20,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <GallerySection />
+        <TestimonialsSection />
         <LocationSection />
         <ContactSection />
       </main>

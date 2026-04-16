@@ -64,18 +64,28 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Doctor photo */}
+        {/* Doctor photos — collage */}
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
           <div className="relative w-72 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[480px]">
             {/* Glow ring */}
             <div className="absolute inset-0 rounded-3xl bg-white/10 blur-2xl scale-110" />
+            {/* Foto principal (última foto del carrusel) */}
             <div className="relative w-full h-full rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
               <Image
-                src="https://i.ibb.co/hr2fDY2/IMG-20260414-WA0012.jpg"
-                alt="Dr. Patricio Gavilanes — Cirujano Especialista en Angiología y Cirugía Vascular, Cumbayá"
+                src="https://i.ibb.co/3m5s7wgn/IMG-20260414-WA0002.jpg"
+                alt="Dr. Patricio Gavilanes — Especialista Vascular en Cumbayá"
                 fill
                 className="object-cover object-top"
                 priority
+              />
+            </div>
+            {/* Foto secundaria (penúltima) superpuesta */}
+            <div className="absolute -bottom-6 -left-6 w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-white/40 shadow-xl rotate-3">
+              <Image
+                src="https://i.ibb.co/FqmJMFfs/IMG-20260414-WA0004.jpg"
+                alt="Dr. Patricio Gavilanes — Cirujano Especialista Vascular Cumbayá"
+                fill
+                className="object-cover object-top"
               />
             </div>
           </div>

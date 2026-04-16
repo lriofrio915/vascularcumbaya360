@@ -18,7 +18,7 @@ const pillars = [
 
 export default function AboutSection() {
   return (
-    <section id="sobre-mi" className="py-20 bg-white">
+    <section id="sobre-mi" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Photo */}
@@ -28,7 +28,7 @@ export default function AboutSection() {
               <div className="absolute -inset-4 bg-[#F0F7FF] rounded-3xl -rotate-3" />
               <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://i.ibb.co/FL6Wn1JX/IMG-20260414-WA0011.jpg"
+                  src="https://i.ibb.co/99T0PKKz/IMG-20260414-WA0003.jpg"
                   alt="Dr. Patricio Gavilanes — Especialista en Angiología y Cirugía Vascular, Hospital de los Valles Cumbayá"
                   fill
                   className="object-cover object-top"

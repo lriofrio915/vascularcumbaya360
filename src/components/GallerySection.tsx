@@ -14,32 +14,12 @@ const photos = [
     alt: "Equipo de diagnóstico vascular de alta tecnología",
   },
   {
-    src: "https://i.ibb.co/232Btqgr/IMG-20260414-WA0005.jpg",
-    alt: "Tecnología endoláser para tratamiento de várices",
-  },
-  {
-    src: "https://i.ibb.co/G4MPwZ3T/IMG-20260414-WA0009.jpg",
-    alt: "Procedimiento vascular mínimamente invasivo",
-  },
-  {
     src: "https://i.ibb.co/n8mrm3mD/IMG-20260414-WA0007.jpg",
     alt: "Sala de consulta equipada con tecnología de vanguardia",
   },
   {
     src: "https://i.ibb.co/qLCSLJD2/IMG-20260414-WA0006.jpg",
     alt: "Dr. Gavilanes en atención personalizada",
-  },
-  {
-    src: "https://i.ibb.co/99T0PKKz/IMG-20260414-WA0003.jpg",
-    alt: "Instalaciones Hospital de los Valles — Consultorio 334",
-  },
-  {
-    src: "https://i.ibb.co/FqmJMFfs/IMG-20260414-WA0004.jpg",
-    alt: "Diagnóstico avanzado de enfermedades circulatorias",
-  },
-  {
-    src: "https://i.ibb.co/3m5s7wgn/IMG-20260414-WA0002.jpg",
-    alt: "Atención vascular especializada en Cumbayá",
   },
 ];
 
