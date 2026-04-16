@@ -119,7 +119,14 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 px-4 py-4 flex flex-col gap-3 shadow-lg">
+        <>
+          {/* Overlay para cerrar al tocar fuera */}
+          <div
+            className="fixed inset-0 z-40"
+            onClick={() => setMenuOpen(false)}
+            aria-hidden="true"
+          />
+          <div className="relative z-50 md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 px-4 py-4 flex flex-col gap-3 shadow-lg">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -149,6 +156,7 @@ export default function Navbar() {
             Agendar Cita
           </a>
         </div>
+        </>
       )}
     </header>
   );

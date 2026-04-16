@@ -11,18 +11,18 @@ const trustPoints = [
 
 export default function ContactSection() {
   return (
-    <section id="contacto" className="py-20 bg-white">
+    <section id="contacto" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: copy */}
           <div>
-            <span className="inline-block text-[#2563EB] text-sm font-semibold uppercase tracking-widest mb-2">
+            <span className="inline-block text-[#2563EB] dark:text-blue-400 text-sm font-semibold uppercase tracking-widest mb-2">
               Contáctanos
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] dark:text-white mb-4">
               Agenda tu Cita
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-8">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               La forma más rápida de agendar es directamente por WhatsApp. El
               Dr. Gavilanes o su equipo te confirmarán tu cita en el consultorio
               de Cumbayá a la brevedad.
@@ -32,7 +32,7 @@ export default function ContactSection() {
               {trustPoints.map((point) => (
                 <li
                   key={point}
-                  className="flex items-start gap-3 text-gray-600 text-sm"
+                  className="flex items-start gap-3 text-gray-600 dark:text-gray-300 text-sm"
                 >
                   <CheckCircle2
                     size={17}
@@ -45,7 +45,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right: WhatsApp card */}
-          <div className="bg-[#F0F7FF] rounded-2xl p-8 border border-blue-100 flex flex-col items-center text-center gap-6">
+          <div className="bg-[#F0F7FF] dark:bg-gray-800 rounded-2xl p-8 border border-blue-100 dark:border-gray-700 flex flex-col items-center text-center gap-6">
             {/* WhatsApp icon circle */}
             <div className="w-20 h-20 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg">
               <svg
@@ -61,10 +61,10 @@ export default function ContactSection() {
 
             {/* Phone number */}
             <div>
-              <div className="text-2xl font-bold text-[#1B3A6B]">
+              <div className="text-2xl font-bold text-[#1B3A6B] dark:text-white">
                 +593 99 834 0502
               </div>
-              <div className="text-gray-500 text-sm mt-1">
+              <div className="text-gray-500 dark:text-gray-400 text-sm mt-1">
                 WhatsApp directo con el consultorio
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function ContactSection() {
             </a>
 
             {/* Meta info */}
-            <div className="flex flex-col gap-2 text-xs text-gray-400">
+            <div className="flex flex-col gap-2 text-xs text-gray-400 dark:text-gray-500">
               <div className="flex items-center justify-center gap-1.5">
                 <Clock size={12} />
                 <span>Atención Lunes a Sábado</span>

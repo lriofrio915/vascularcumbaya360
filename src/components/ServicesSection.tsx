@@ -35,17 +35,17 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="servicios" className="py-20 bg-[#F0F7FF]">
+    <section id="servicios" className="py-20 bg-[#F0F7FF] dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block text-[#2563EB] text-sm font-semibold uppercase tracking-widest mb-2">
+          <span className="inline-block text-[#2563EB] dark:text-blue-400 text-sm font-semibold uppercase tracking-widest mb-2">
             Especialidades
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] dark:text-white">
             Servicios Médicos en Cumbayá
           </h2>
-          <p className="text-gray-600 mt-3 max-w-xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 mt-3 max-w-xl mx-auto">
             Atención vascular especializada con tecnología avanzada y un enfoque
             humano para mejorar tu calidad de vida.
           </p>
@@ -58,18 +58,18 @@ export default function ServicesSection() {
             return (
               <div
                 key={service.title}
-                className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-md border border-blue-50 hover:border-[#2563EB]/20 transition-all duration-300"
+                className="group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm hover:shadow-md border border-blue-50 dark:border-gray-700 hover:border-[#2563EB]/20 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#F0F7FF] group-hover:bg-[#2563EB] flex items-center justify-center mb-4 transition-colors duration-300">
+                <div className="w-12 h-12 rounded-xl bg-[#F0F7FF] dark:bg-gray-700 group-hover:bg-[#2563EB] flex items-center justify-center mb-4 transition-colors duration-300">
                   <Icon
                     size={22}
                     className="text-[#2563EB] group-hover:text-white transition-colors duration-300"
                   />
                 </div>
-                <h3 className="font-bold text-[#1B3A6B] text-lg mb-2">
+                <h3 className="font-bold text-[#1B3A6B] dark:text-white text-lg mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                   {service.desc}
                 </p>
               </div>

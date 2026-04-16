@@ -58,7 +58,7 @@ export default function GallerySection() {
   );
 
   return (
-    <section id="galeria" className="py-20 bg-[#F0F7FF]">
+    <section id="galeria" className="py-20 bg-[#F0F7FF] dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-12">
@@ -79,10 +79,10 @@ export default function GallerySection() {
             </svg>
             Tecnología de Vanguardia
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] dark:text-white mb-3">
             Instalaciones y Procedimientos
           </h2>
-          <p className="text-gray-500 text-base max-w-xl mx-auto">
+          <p className="text-gray-500 dark:text-gray-400 text-base max-w-xl mx-auto">
             Conoce nuestro consultorio, equipamiento de última generación y el
             ambiente cálido donde cuidamos tu salud vascular.
           </p>

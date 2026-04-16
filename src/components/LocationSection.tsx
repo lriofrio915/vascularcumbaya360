@@ -31,24 +31,24 @@ const info = [
 
 export default function LocationSection() {
   return (
-    <section id="ubicacion" className="py-20 bg-[#F0F7FF]">
+    <section id="ubicacion" className="py-20 bg-[#F0F7FF] dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block text-[#2563EB] text-sm font-semibold uppercase tracking-widest mb-2">
+          <span className="inline-block text-[#2563EB] dark:text-blue-400 text-sm font-semibold uppercase tracking-widest mb-2">
             Dónde Encontrarnos
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] dark:text-white">
             Consultorio en Cumbayá
           </h2>
-          <p className="text-gray-600 mt-3">
+          <p className="text-gray-600 dark:text-gray-300 mt-3">
             Hospital de los Valles — Consultorio 334, Provital
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Map */}
-          <div className="rounded-2xl overflow-hidden shadow-lg border border-blue-100 h-80 md:h-96 bg-gray-100">
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-blue-100 dark:border-gray-700 h-80 md:h-96 bg-gray-100 dark:bg-gray-700">
             <iframe
               src={MAPS_EMBED}
               width="100%"
@@ -62,12 +62,12 @@ export default function LocationSection() {
           </div>
 
           {/* Info card */}
-          <div className="bg-white rounded-2xl shadow-sm border border-blue-50 p-6 flex flex-col gap-5">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-blue-50 dark:border-gray-700 p-6 flex flex-col gap-5">
             <div>
-              <div className="font-bold text-[#1B3A6B] text-lg">
+              <div className="font-bold text-[#1B3A6B] dark:text-white text-lg">
                 Hospital de los Valles
               </div>
-              <div className="text-[#2563EB] text-sm font-medium">
+              <div className="text-[#2563EB] dark:text-blue-400 text-sm font-medium">
                 Consultorio 334, Provital
               </div>
             </div>
@@ -77,11 +77,11 @@ export default function LocationSection() {
                 const Icon = item.icon;
                 return (
                   <div key={item.label} className="flex gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-[#F0F7FF] flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-lg bg-[#F0F7FF] dark:bg-gray-700 flex items-center justify-center shrink-0">
                       <Icon size={16} className="text-[#2563EB]" />
                     </div>
                     <div>
-                      <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">
+                      <div className="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wide">
                         {item.label}
                       </div>
                       {item.href ? (
@@ -89,12 +89,12 @@ export default function LocationSection() {
                           href={item.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-[#1B3A6B] font-medium hover:text-[#2563EB] transition-colors"
+                          className="text-sm text-[#1B3A6B] dark:text-white font-medium hover:text-[#2563EB] dark:hover:text-blue-400 transition-colors"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <div className="text-sm text-[#1B3A6B] font-medium whitespace-pre-line">
+                        <div className="text-sm text-[#1B3A6B] dark:text-white font-medium whitespace-pre-line">
                           {item.value}
                         </div>
                       )}

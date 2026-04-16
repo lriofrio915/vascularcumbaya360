@@ -23,13 +23,6 @@ const testimonials = [
     color: "bg-[#0f2347]",
   },
   {
-    name: "Roberto S.",
-    procedure: "Diagnóstico vascular preventivo",
-    text: "Me hice un chequeo preventivo y quedé muy satisfecho. Las instalaciones son modernas y el equipo médico es de primer nivel. Totalmente recomendado.",
-    initials: "RS",
-    color: "bg-[#2563EB]",
-  },
-  {
     name: "María L.",
     procedure: "Cirugía mínimamente invasiva",
     text: "No podía creer lo rápido que me recuperé. El Dr. Gavilanes es un experto en su área y su consultorio en el Hospital de los Valles es excelente.",

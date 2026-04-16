@@ -13,13 +13,13 @@ export default function WhatsAppButton() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
       {/* Tooltip */}
       {tooltipVisible && (
-        <div className="flex items-center gap-2 bg-white rounded-xl shadow-lg border border-gray-100 px-4 py-3 text-sm max-w-[200px]">
-          <span className="text-gray-700 leading-tight">
+        <div className="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 px-4 py-3 text-sm max-w-[200px]">
+          <span className="text-gray-700 dark:text-gray-200 leading-tight">
             ¿Necesitas una cita? ¡Escríbenos!
           </span>
           <button
             onClick={() => setTooltipVisible(false)}
-            className="text-gray-400 hover:text-gray-600 shrink-0 p-2 -m-2"
+            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-400 shrink-0 p-2 -m-2"
             aria-label="Cerrar"
           >
             <X size={14} />
