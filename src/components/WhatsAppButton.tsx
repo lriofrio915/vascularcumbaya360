@@ -7,7 +7,7 @@ const WHATSAPP_URL =
   "https://wa.me/593998340502?text=Hola%20Dr.%20Gavilanes%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.";
 
 export default function WhatsAppButton() {
-  const [tooltipVisible, setTooltipVisible] = useState(true);
+  const [tooltipVisible, setTooltipVisible] = useState(false);
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
