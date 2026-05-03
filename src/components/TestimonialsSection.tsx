@@ -100,7 +100,7 @@ export default function TestimonialsSection() {
             ¿Listo para recuperar tu salud vascular?
           </p>
           <a
-            href="https://wa.me/593998340502?text=Hola%20Dr.%20Gavilanes%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1."
+            href="https://wa.me/593998340502?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#1B3A6B] hover:bg-[#0f2347] text-white font-semibold px-7 py-3.5 rounded-full transition-colors shadow-lg text-base"

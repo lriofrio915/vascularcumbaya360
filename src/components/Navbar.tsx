@@ -7,11 +7,11 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 
 const WHATSAPP_URL =
-  "https://wa.me/593998340502?text=Hola%20Dr.%20Gavilanes%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.";
+  "https://wa.me/593998340502?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.";
 
 const navLinks = [
   { href: "#servicios", label: "Servicios" },
-  { href: "#sobre-mi", label: "Sobre el Dr." },
+  { href: "#sobre-mi", label: "Sobre Mí" },
   { href: "#testimonios", label: "Testimonios" },
   { href: "#ubicacion", label: "Ubicación" },
   { href: "#contacto", label: "Contacto" },

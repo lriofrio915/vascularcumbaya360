@@ -19,7 +19,7 @@ const info = [
     icon: Phone,
     label: "WhatsApp / Teléfono",
     value: "+593 99 834 0502",
-    href: "https://wa.me/593998340502?text=Hola%20Dr.%20Gavilanes%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.",
+    href: "https://wa.me/593998340502?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.",
   },
   {
     icon: Mail,

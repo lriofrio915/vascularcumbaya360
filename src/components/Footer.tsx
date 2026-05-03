@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const navLinks = [
   { href: "#servicios", label: "Servicios" },
-  { href: "#sobre-mi", label: "Sobre el Dr." },
+  { href: "#sobre-mi", label: "Sobre Mí" },
   { href: "#ubicacion", label: "Ubicación" },
   { href: "#contacto", label: "Contacto" },
 ];

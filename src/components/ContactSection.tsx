@@ -1,7 +1,7 @@
 import { CheckCircle2, Clock, MapPin } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/593998340502?text=Hola%20Dr.%20Gavilanes%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.";
+  "https://wa.me/593998340502?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.";
 
 const trustPoints = [
   "Respuesta rápida — generalmente el mismo día",
@@ -23,8 +23,7 @@ export default function ContactSection() {
               Agenda tu Cita
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              La forma más rápida de agendar es directamente por WhatsApp. El
-              Dr. Gavilanes o su equipo te confirmarán tu cita en el consultorio
+              La forma más rápida de agendar es directamente por WhatsApp. Yo o mi equipo te confirmaremos tu cita en el consultorio
               de Cumbayá a la brevedad.
             </p>
 

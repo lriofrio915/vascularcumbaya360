@@ -7,7 +7,7 @@ import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 const photos = [
   {
     src: "https://i.ibb.co/YFNdk3H9/IMG-20260414-WA0010.jpg",
-    alt: "Consultorio Dr. Gavilanes — instalaciones modernas",
+    alt: "Mi consultorio — instalaciones modernas",
   },
   {
     src: "https://i.ibb.co/bjqVtBzQ/IMG-20260414-WA0008.jpg",
@@ -19,7 +19,7 @@ const photos = [
   },
   {
     src: "https://i.ibb.co/qLCSLJD2/IMG-20260414-WA0006.jpg",
-    alt: "Dr. Gavilanes en atención personalizada",
+    alt: "En atención personalizada con mis pacientes",
   },
 ];
 

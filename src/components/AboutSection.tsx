@@ -45,7 +45,7 @@ export default function AboutSection() {
           {/* Content */}
           <div>
             <span className="inline-block text-[#2563EB] text-sm font-semibold uppercase tracking-widest mb-2">
-              Sobre el Doctor
+              Sobre Mí
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] mb-4">
               Dr. Patricio Gavilanes
@@ -60,7 +60,7 @@ export default function AboutSection() {
             <p className="text-gray-600 leading-relaxed mb-8">
               Especialista con más de 15 años de trayectoria en el diagnóstico y
               tratamiento de enfermedades vasculares complejas. Con miles de
-              procedimientos exitosos, el Dr. Gavilanes combina tecnología
+              procedimientos exitosos, combino tecnología
               avanzada con un profundo compromiso hacia el bienestar de cada
               paciente.
             </p>
