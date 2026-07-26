@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-white/20 shadow mb-3">
               <Image
-                src="https://i.ibb.co/Lh2xqhns/IMG-20260413-WA0059.jpg"
+                src="https://i.ibb.co/FqmJMFfs/IMG-20260414-WA0004.jpg"
                 alt="Dr. Patricio Gavilanes — Cirujano Vascular Cumbayá"
                 fill
                 className="object-cover object-top"

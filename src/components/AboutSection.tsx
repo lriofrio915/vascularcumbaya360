@@ -45,7 +45,7 @@ export default function AboutSection() {
           {/* Content */}
           <div>
             <span className="inline-block text-[#2563EB] text-sm font-semibold uppercase tracking-widest mb-2">
-              Sobre Mí
+              Sobre el Doctor
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] mb-4">
               Dr. Patricio Gavilanes
@@ -53,16 +53,15 @@ export default function AboutSection() {
             <p className="text-[#2563EB] font-semibold mb-4">
               Especialista en Angiología y Cirugía Vascular
             </p>
-            <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-gray-600 mb-6">
-              &ldquo;Mi compromiso es proporcionar un cuidado excepcional basado
-              en experiencia clínica especializada.&rdquo;
+            <blockquote className="border-l-4 border-[#2563EB] pl-4 italic text-gray-600 dark:text-gray-400 mb-6">
+              Su compromiso es proporcionar un cuidado excepcional basado en
+              experiencia clínica especializada.
             </blockquote>
-            <p className="text-gray-600 leading-relaxed mb-8">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8 text-justify">
               Especialista con más de 15 años de trayectoria en el diagnóstico y
               tratamiento de enfermedades vasculares complejas. Con miles de
-              procedimientos exitosos, combino tecnología
-              avanzada con un profundo compromiso hacia el bienestar de cada
-              paciente.
+              procedimientos exitosos, combina tecnología avanzada con un
+              profundo compromiso hacia el bienestar de cada paciente.
             </p>
 
             {/* Pillars */}

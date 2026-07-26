@@ -4,9 +4,9 @@ const WHATSAPP_URL =
   "https://wa.me/593998340502?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20Cumbay%C3%A1.";
 
 const trustPoints = [
-  "Respuesta rápida — generalmente el mismo día",
-  "Atención personalizada desde el primer mensaje",
-  "Lunes a sábado, previa cita en consultorio",
+  "Respuesta rápida — generalmente el mismo día.",
+  "Atención personalizada desde el primer mensaje.",
+  "Lunes a sábado, previa cita en consultorio.",
 ];
 
 export default function ContactSection() {
@@ -22,9 +22,10 @@ export default function ContactSection() {
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3A6B] dark:text-white mb-4">
               Agenda tu Cita
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              La forma más rápida de agendar es directamente por WhatsApp. Yo o mi equipo te confirmaremos tu cita en el consultorio
-              de Cumbayá a la brevedad.
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8 text-justify">
+              La forma más rápida de agendar es directamente por WhatsApp. El
+              Dr. Gavilanes o su equipo confirmará la cita en el consultorio de
+              Cumbayá a la brevedad.
             </p>
 
             <ul className="space-y-3">

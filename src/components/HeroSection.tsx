@@ -79,15 +79,6 @@ export default function HeroSection() {
                 priority
               />
             </div>
-            {/* Foto secundaria (penúltima) superpuesta */}
-            <div className="absolute -bottom-6 -left-6 w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-white/40 shadow-xl rotate-3">
-              <Image
-                src="https://i.ibb.co/FqmJMFfs/IMG-20260414-WA0004.jpg"
-                alt="Dr. Patricio Gavilanes — Cirujano Especialista Vascular Cumbayá"
-                fill
-                className="object-cover object-top"
-              />
-            </div>
           </div>
         </div>
       </div>
