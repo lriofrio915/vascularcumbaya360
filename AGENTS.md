@@ -1,5 +1,23 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Vascular Cumbaya 360 — AGENTS.md
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+## Proyecto
+
+Landing page / SaaS para clínica vascular en Cumbaya, Ecuador.
+
+## Stack
+
+- Next.js 15 (App Router) + TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+## Comandos
+
+```bash
+npm run dev      # desarrollo
+npm run build    # producción
+npm run lint     # linter
+```
+
+## Deploy
+
+Vercel — push a main.
